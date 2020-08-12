@@ -11,7 +11,7 @@ li,
 a {
   color: whitesmoke;
   display: inline-block;
-  text-transform: none;
+  text-decoration: none;
 }
 
 img {
