@@ -1,17 +1,21 @@
 body {
   background-color: goldenrod;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 header {
   background-color: hotpink;
-  height: 30px;
 }
 
-li,
-a {
+header ul li a {
   color: whitesmoke;
-  display: inline-block;
   text-decoration: none;
+  background-color: cornflowerblue;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
 }
 
 img {
