@@ -1,0 +1,19 @@
+body {
+  background-color: goldenrod;
+}
+
+header {
+  background-color: hotpink;
+  height: 30px;
+}
+
+li,
+a {
+  color: whitesmoke;
+  display: inline-block;
+  text-transform: none;
+}
+
+img {
+  width: 300px;
+}
