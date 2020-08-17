@@ -1,6 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: goldenrod;
   font-family: "Noto Sans TC", sans-serif;
+  height: 100vh;
 }
 
 header {
@@ -16,8 +23,73 @@ header ul li a {
 header ul li {
   list-style: none;
   display: inline-block;
+  
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
 }
 
 img {
   width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+table {
+  background-color: whitesmoke;
+  color: #333;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: black;
+  color: white;,
+}
+
+tr {
+  border-bottom: 5px solid #333;
+}
+
+#boxes {
+  background: url("/task_4/img/pexels-disha-sheta-4010464.jpg") no-repeat top center/cover
+}
+
+.box {
+  background-color: wheat;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  display: inline-block;
+}
+
+
+.purple-square {
+  background-color: purple;
+  border: 10px dotted yellow;
+}
+
+.light-blue-square {
+  background-color: lightblue;
+border: 10px dashed burlywood;
+}
+
+.armygreen-square {
+  background-color: rgb(4, 59, 4);
+  border: 5px double white;
+}
+
+.someblue-square {
+  background-color: cyan;
+  border: 50px solid black;
+}
+
+.circle {
+background-color: red;
+border: 5px solid black;
+border-radius: 50%;
 }
