@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +23,6 @@ header ul li a {
 header ul li {
   list-style: none;
   display: inline-block;
-  
 }
 
 h1 {
@@ -48,7 +47,7 @@ table {
 
 thead {
   background-color: black;
-  color: white;,
+  color: white;
 }
 
 tr {
@@ -56,7 +55,8 @@ tr {
 }
 
 #boxes {
-  background: url("/task_4/img/pexels-disha-sheta-4010464.jpg") no-repeat top center/cover
+  background: url("/task_4/img/pexels-disha-sheta-4010464.jpg") no-repeat top
+    center/cover;
 }
 
 .box {
@@ -67,7 +67,6 @@ tr {
   display: inline-block;
 }
 
-
 .purple-square {
   background-color: purple;
   border: 10px dotted yellow;
@@ -75,7 +74,7 @@ tr {
 
 .light-blue-square {
   background-color: lightblue;
-border: 10px dashed burlywood;
+  border: 10px dashed burlywood;
 }
 
 .armygreen-square {
@@ -89,7 +88,7 @@ border: 10px dashed burlywood;
 }
 
 .circle {
-background-color: red;
-border: 5px solid black;
-border-radius: 50%;
+  background-color: red;
+  border: 5px solid black;
+  border-radius: 50%;
 }

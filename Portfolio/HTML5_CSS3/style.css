@@ -61,7 +61,7 @@ header nav ul li a:hover {
   background-repeat: no repeat;
   background-attachment: fixed;
   height: 85vh;
-  padding: 50px;
+  padding: 100px;
 }
 
 span {
@@ -70,7 +70,7 @@ span {
 
 main .hero-banner h1 {
   text-align: center;
-  padding: 100px;
+  padding: 200px;
   color: whitesmoke;
   font-size: 50px;
 }
@@ -91,6 +91,7 @@ main .hero-banner h1 {
   float: left;
   height: 200px;
   margin-right: 20px;
+  border-radius: 5px;
 }
 
 /*Present Area*/
@@ -124,18 +125,28 @@ main .hero-banner h1 {
 .future-container {
   background-image: url("img/pexels-lee-campbell-115655.jpg");
   background-attachment: fixed;
-  padding: 20px 20px 20px 20px;
-  color: whitesmoke;
+  padding: 5px 20px 10px 20px;
+  color: #333;
   height: 400px;
+  width: 100%;
+}
+
+.future-content {
+  background-color: white;
+  padding: 10px 20px 0px 20px;
+  margin-bottom: 30px;
+  color: #333;
+  height: 350px;
   width: 100%;
   line-height: 2;
 }
 
 .future-container img {
   float: left;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 250px;
   margin-right: 20px;
+  border-radius: 5px;
 }
 
 /*Future Area*/
