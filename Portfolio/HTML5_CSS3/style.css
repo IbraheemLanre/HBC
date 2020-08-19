@@ -1,13 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: rgb(221, 120, 48);
+  height: 100vh;
+  font-family: "Ovo", serif;
 }
 
-h1 {
-  color: green;
+/* Header Area */
+
+header {
+  background-color: rgb(61, 53, 53);
+  text-align: right;
+  display: block;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+}
+
+header #logo a {
+  font-size: 32px;
+  float: left;
+  color: goldenrod;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  margin: 0 5px 0 5px;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header nav ul li a:hover {
+  background-color: goldenrod;
+}
+
+/*Hero banner Area*/
+
+.hero-banner {
+  background-image: url("img/pexels-thiago-matos-2008426.jpg");
+  background-position: center center/cover;
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  height: 85vh;
+  padding: 50px;
+}
+
+span {
+  color: goldenrod;
+}
+
+main .hero-banner h1 {
   text-align: center;
+  padding: 100px;
+  color: whitesmoke;
+  font-size: 50px;
 }
 
-p {
+/*Past Area*/
+
+.past-container {
+  background-color: whitesmoke;
+  border: 40px solid lightgray;
+  padding: 20px 20px 20px 20px;
+  color: black;
+  height: 400px;
+  width: 100%;
+  line-height: 2;
+}
+
+.past-container img {
+  float: left;
+  height: 200px;
+  margin-right: 20px;
+}
+
+/*Present Area*/
+
+.present-container {
+  background-image: url("img/pexels-thiago-matos-2388361.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  padding: 20px 20px 20px 20px;
+  color: white;
+  height: 400px;
+  width: 100%;
+  line-height: 2;
+}
+
+.present-container img {
+  float: left;
+  height: 350px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.present-content {
+  background-color: white;
+  color: #333;
+  height: 350px;
+}
+
+/*Future Area*/
+
+.future-container {
+  background-image: url("img/pexels-lee-campbell-115655.jpg");
+  background-attachment: fixed;
+  padding: 20px 20px 20px 20px;
+  color: whitesmoke;
+  height: 400px;
+  width: 100%;
+  line-height: 2;
+}
+
+.future-container img {
+  float: left;
+  height: 300px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+/*Future Area*/
+
+footer {
+  background-color: rgb(61, 53, 53);
   color: whitesmoke;
   text-align: center;
+  height: 40px;
+  padding: 10px 0 10px;
 }
