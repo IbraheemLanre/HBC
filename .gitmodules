@@ -4,3 +4,6 @@
 [submodule "web-analytics"]
 	path = web-analytics
 	url = https://github.com/IbraheemLanre/web-analytics.git
+[submodule "IbraheemLanre.github.io"]
+	path = IbraheemLanre.github.io
+	url = https://github.com/IbraheemLanre/IbraheemLanre.github.io.git
