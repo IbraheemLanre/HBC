@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign UP Page</title>
+  </head>
+
+  <style>
+    body {
+      height: 100vh;
+      background-color: #236747;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .container-box {
+      padding: 20px;
+    }
+
+    .container {
+      background-color: white;
+      display: block;
+      height: 85vh;
+      width: 310px;
+      margin: 0 auto;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5px;
+    }
+
+    h1,
+    p,
+    h4 {
+      text-align: center;
+    }
+
+    .existing-user {
+      color: white;
+    }
+
+    input {
+      height: 40px;
+      margin-bottom: 20px;
+      margin-top: 5px;
+      width: 300px;
+    }
+
+    #submit {
+      color: white;
+      width: 250px;
+      display: block;
+      margin: 0 auto;
+      background-color: tomato;
+      text-decoration: none;
+      border-radius: 5px;
+      border: none;
+    }
+
+    #submit:hover {
+      cursor: pointer;
+      background-color: #236747;
+    }
+
+    span {
+      color: tomato;
+    }
+  </style>
+  <body>
+    <div class="container-box">
+      <div class="container">
+        <form action="">
+          <h1>Sign Up</h1>
+          <h4>It's free and only takes a few minutes</h4>
+          <label for="firstname">First name</label>
+          <div>
+            <input type="text" id="firstname" />
+          </div>
+          <label for=""></label>
+
+          <label for="lastname">Last name</label>
+          <div>
+            <input type="text" name="" id="lastname" />
+          </div>
+
+          <label for="email">Email</label>
+          <div>
+            <input type="email" name="" id="email" />
+          </div>
+
+          <label for="password">Password</label>
+          <div>
+            <input type="password" name="" id="password" />
+          </div>
+
+          <label for="confirm-password">Confirm Password</label>
+          <div>
+            <input type="password" name="" id="confirm-password" />
+          </div>
+
+          <div>
+            <input type="button" name="" id="submit" value="SIGN UP" />
+          </div>
+        </form>
+        <p>
+          By clicking the Sign Up button you agree to our
+          <span>Terms & Condition </span>and<span> Privacy Policy</span>
+        </p>
+      </div>
+      <div class="existing-user">
+        <p>Already have an account? <span>Login Here</span></p>
+      </div>
+    </div>
+  </body>
+</html>
