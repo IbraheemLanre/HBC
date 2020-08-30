@@ -52,6 +52,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   background-color: goldenrod;
+  cursor: pointer;
 }
 
 /*Hero banner Area*/
@@ -173,12 +174,11 @@ footer .contact-container {
   background-color: #090908;
   color: #fff;
   padding: 20px 20px 20px 20px;
-  height: 150px;
+  height: 350px;
 }
 
 footer .contact-container form {
   float: left;
-  margin-right: 100px;
 }
 
 footer .contact-container label {
@@ -192,6 +192,27 @@ footer .contact-container input {
   height: 30px;
   width: 250px;
   margin-bottom: 10px;
+  font-family: "Ovo" serif;
+}
+
+textarea {
+  margin: 0px 0px 30px 240px;
+  font-family: "Ovo" serif;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  margin-left: -60px;
+  background-color: #67fec8;
+  color: #090908;
+  font-family: "Ovo" serif;
+  padding: 10px 10px 10px 10px;
+}
+
+button:hover {
+  background-color: goldenrod;
+  cursor: pointer;
 }
 
 footer .contact-container .contact-icons {
@@ -211,4 +232,5 @@ footer .contact-container .contact-icons img {
 
 footer .contact-container .contact-icons img:hover {
   background-color: goldenrod;
+  cursor: pointer;
 }
