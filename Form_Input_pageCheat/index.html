@@ -8,95 +8,169 @@
   <style>
     table {
       font-family: Helvetica;
+      font-size: 16px;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+    }
+
+    th {
+      background-color: coral;
+      color: #fff;
+    }
+
+    table {
+      margin: 20px;
+    }
+
+    .center {
+      text-align: center;
+      background-color: #ebebeb;
     }
   </style>
   <body>
-    <form action="">
-      <table>
-        <thead style="background-color: orangered;">
-          <th>Description</th>
-          <th>Input examples</th>
-          <th>Notes</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>type="button"</td>
-            <td><input type="button" value="I am a button" /></td>
-            <td>Needs value attribute for button</td>
-          </tr>
-          <tr>
-            <td>type="checkbox"</td>
-            <td><input type="checkbox" />Checkbox</td>
-            <td>Checkbox text comes after input tag</td>
-          </tr>
-          <tr>
-            <td>type="color"</td>
-            <td><input type="color" value="#e66465" /></td>
-            <td>You can change the color under value attribute</td>
-          </tr>
-          <tr>
-            <td>type="date"</td>
-            <td><input type="date" /></td>
-            <td>You can select any date as you wish</td>
-          </tr>
-          <tr>
-            <td>type="email"</td>
-            <td><input type="email" placeholder="Enter your email" /></td>
-            <td>Field for email</td>
-          </tr>
-          <tr>
-            <td>type="file"</td>
-            <td><input type="file" /></td>
-            <td>Upload a file</td>
-          </tr>
-          <tr>
-            <td>type="month"</td>
-            <td><input type="month" /></td>
-            <td>What month are you born</td>
-          </tr>
-          <tr>
-            <td>type="number"</td>
-            <td><input type="number" /></td>
-            <td>Increase and decrease as you want</td>
-          </tr>
-          <tr>
-            <td>type="password"</td>
-            <td><input type="password" /></td>
-            <td>Does not display password the user is typing</td>
-          </tr>
-          <tr>
-            <td>type="range"</td>
-            <td><input type="range" /></td>
-            <td>You can set the minimum or maximum range</td>
-          </tr>
-          <tr>
-            <td>type="submit"</td>
-            <td><input type="submit" /></td>
-          </tr>
-          <tr>
-            <td>type="tel"</td>
-            <td><input type="tel" /></td>
-            <td>A plcae for your phone number</td>
-          </tr>
-          <tr>
-            <td>type="select"</td>
-            <td>
-              <select name="" id="">
-                <option>Choose one</option>
-                <option value="">HTML5</option>
-                <option value="">CSS3</option>
-                <option value="">JAVASCRIPT</option>
-                <option value="">BOOTSTRAP</option>
-                <option value="">jQUERY</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>type="textarea"</td>
-            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
+    <table>
+      <thead>
+        <th>Description</th>
+        <th>Input examples</th>
+        <th>Notes</th>
+      </thead>
+      <tbody>
+        <h2>Form elements</h2>
+        <tr>
+          <td class="center" colspan="3">Input types:</td>
+        </tr>
+        <tr>
+          <td>type="button"</td>
+          <td><input type="button" value="I am a button" /></td>
+          <td>Needs value attribute for button</td>
+        </tr>
+        <tr>
+          <td>type="checkbox"</td>
+          <td><input type="checkbox" />Checkbox</td>
+          <td>Checkbox text comes after input tag</td>
+        </tr>
+        <tr>
+          <td>type="color"</td>
+          <td><input type="color" value="#e66465" /></td>
+          <td>You can change the color under value attribute</td>
+        </tr>
+        <tr>
+          <td>type="date"</td>
+          <td><input type="date" /></td>
+          <td>You can select any date as you wish</td>
+        </tr>
+        <tr>
+          <td>type="email"</td>
+          <td><input type="email" placeholder="Enter your email" /></td>
+          <td>Field for email</td>
+        </tr>
+        <tr>
+          <td>type="file"</td>
+          <td><input type="file" /></td>
+          <td>Upload a file</td>
+        </tr>
+        <tr>
+          <td>type="month"</td>
+          <td><input type="month" /></td>
+          <td>What month are you born</td>
+        </tr>
+        <tr>
+          <td>type="number"</td>
+          <td><input type="number" /></td>
+          <td>Increase and decrease as you want</td>
+        </tr>
+        <tr>
+          <td>type="password"</td>
+          <td><input type="password" /></td>
+          <td>Does not display password the user is typing</td>
+        </tr>
+        <tr>
+          <td>type="range</td>
+          <td><input type="radio" />Radiobutton</td>
+          <td>Radiobutton text comes after the input tag</td>
+        </tr>
+        <tr>
+          <td>type="range"</td>
+          <td><input type="range" /></td>
+          <td>You can set the minimum or maximum range</td>
+        </tr>
+        <tr>
+          <td>type="reset"</td>
+          <td><input type="reset" value="Reset" /></td>
+          <td>
+            Form-data will be reset to default values after reset is clicked
+          </td>
+        </tr>
+        <tr>
+          <td>type="search"</td>
+          <td><input type="search" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>type"submit"</td>
+          <td><input type="submit" value="Submit" /></td>
+          <td>Needs a backend to send data</td>
+        </tr>
+
+        <tr>
+          <td>type="tel"</td>
+          <td><input type="tel" /></td>
+          <td>A plcae for your phone number</td>
+        </tr>
+        <tr>
+          <td>type="text"</td>
+          <td><input type="text" /></td>
+          <td>Well known to me. I learned to use it first as a beginner</td>
+        </tr>
+        <tr>
+          <td>type="time"</td>
+          <td><input type="time" /></td>
+          <td>type="time"</td>
+        </tr>
+        <tr>
+          <td>type="url"</td>
+          <td><input type="url" /></td>
+          <td>
+            Type = "url" is not supported in Safari or IE12 and earlier versions
+          </td>
+        </tr>
+        <tr>
+          <td>type="week"</td>
+          <td><input type="week" /></td>
+          <td>
+            Type="week" is not supportd in Firefox,safari or IE11 and earlier
+            versions
+          </td>
+        </tr>
+        <tr>
+          <td class="center" colspan="3">Select and textarea:</td>
+        </tr>
+        <tr>
+          <td>Select example:</td>
+          <td>
+            <select name="cars" size="4" multiple>
+              <option value="">HTML5</option>
+              <option value="">CSS3</option>
+              <option value="">JAVASCRIPT</option>
+              <option value="">BOOTSTRAP</option>
+              <option value="">jQUERY</option>
+            </select>
+          </td>
+          <td>Select is wrapped around option.</td>
+        </tr>
+        <tr>
+          <td>type="textarea"</td>
+          <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+          <td>
+            The size of a text area can be specified by the cols and rows
+            ttributes, or even better through CSS height and width properties.
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

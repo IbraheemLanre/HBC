@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 1, 24);
+  font-family: "Pattaya", sans-serif;
+  height: 100vh;
+}
+
+section {
+  padding: 50px 50px 50px 50px;
+  height: 100%;
+  width: 100%;
+  margin-right: 40px;
+}
+
+.container {
+  background-color: #fff;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.container text-p {
+  color: #333;
+  padding: 20px 20px 20px 20px;
+  width: 50%;
+}
+
+.container img {
+  float: left;
+  width: 50%;
+}

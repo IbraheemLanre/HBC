@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ovo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="#"><img src="img/logo.png" alt="" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About-us">About us</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Hero Text starts-->
+      <div class="container-hero" id="Home">
+        <div class="hero-text">
+          <h1>Welcome to our homepage!</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+            odit expedita accusamus suscipit praesentium eveniet reiciendis
+            consectetur tenetur necessitatibus veritatis non aut delectus dolore
+            iure accusantium inventore odio, maxime quos explicabo quaerat vitae
+            nulla ad blanditiis minima. Adipisci, ipsum quae?
+          </p>
+          <input type="button" name="" id="read" value="readmore" />
+        </div>
+      </div>
+      <!--Hero Text ends-->
+
+      <!--About us starts-->
+      <div class="container-about" id="About-us">
+        <div class="about-text">
+          <h2>About us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            tempora, magnam, blanditiis voluptatum fugit possimus harum placeat
+            beatae pariatur illum dolores, praesentium aut perspiciatis officia!
+            Nesciunt voluptatibus sapiente maiores perspiciatis doloremque,
+            optio reiciendis? Rem inventore, recusandae enim laboriosam illo
+            porro voluptatibus repellat repellendus neque error culpa beatae
+            commodi est rerum voluptatum totam consequatur expedita, quos
+            repudiandae voluptatem hic asperiores dicta.
+          </p>
+        </div>
+        <img src="img/pexels-jesse-bray-2405908.jpg" alt="" />
+      </div>
+      <!--About us ends-->
+
+      <!--Footer starts-->
+      <footer>
+        <div class="container-contact" id="Contact">
+          <!--Form starts-->
+          <div class="form-group">
+            <h2>Contact Us</h2>
+            <form action="">
+              <!--FirstName starts-->
+              <div class="user-data">
+                <label for="firstname">First name </label>
+                <input type="text" name="" id="firstname" />
+              </div>
+              <!--Firstname ends-->
+
+              <!--Lastname starts-->
+              <div class="user-data">
+                <label for="lastname">Last name </label>
+                <input type="text" name="" id="lastname" />
+              </div>
+              <!--Lastname ends-->
+
+              <!--Email starts-->
+              <div class="user-data">
+                <label for="email">Email </label>
+                <input type="email" name="" id="email" />
+              </div>
+              <!--Email ends-->
+              <hr />
+
+              <!--Radio button starts-->
+              <div class="radio-btn">
+                <p>Do you want to subscribe to our newsletter?</p>
+                <input type="radio" id="yes" name="yes-no" />
+                <label for="yes">Yes</label><br />
+                <input type="radio" name="yes-no" id="no" />
+                <label for="no">No</label><br />
+              </div>
+              <!--Radio button ends-->
+              <hr />
+
+              <!--Checkbox starts-->
+              <div class="checkbox-btn">
+                <p>How did you find us?</p>
+                <input type="checkbox" id="friends" />
+                <label for="friends">Friends</label><br />
+                <input type="checkbox" id="internet" />
+                <label for="internet">Internet</label><br />
+                <input type="checkbox" id="social-media" />
+                <label for="social-media">Social Media</label><br />
+                <input type="checkbox" id="other" />
+                <label for="other">Other:</label><br />
+                <textarea
+                  name=""
+                  id="other-text"
+                  cols="30"
+                  rows="10"
+                  placeholder="How?"
+                ></textarea>
+              </div>
+              <!--Checkbox ends-->
+              <input type="button" id="send" value="send" />
+            </form>
+          </div>
+          <!--Form ends-->
+
+          <!--Footer Paragraph starts-->
+          <div class="footer-para">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              impedit, consequatur qui quaerat doloribus omnis voluptatibus quis
+              ipsam voluptate id?
+            </p>
+          </div>
+          <!--Footer para ends-->
+        </div>
+        <!--copywrite starts-->
+        <div class="copywrite">&copy; Ibraheem Ola-Adua 2020</div>
+        <!--copywrite ends-->
+      </footer>
+      <!--Footer ends-->
+    </main>
+  </body>
+</html>

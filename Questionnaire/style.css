@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 1, 24);
+  font-family: "Pattaya", sans-serif;
+  height: 100vh;
+}
+
+/*Index page starts */
+section {
+  padding: 50px 50px 50px 50px;
+  height: 100%;
+  width: 100%;
+  margin-right: 40px;
+}
+
+.container {
+  background-color: #fff;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.container .text-p {
+  padding: 50px 50px 50px 50px;
+  margin-left: 20px;
+}
+
+.container .text-p p {
+  color: #333;
+  margin: 20px;
+  text-align: justify;
+}
+
+hr {
+  border-top: 3px solid rgb(150, 5, 150);
+}
+
+.container .text-p h1 {
+  text-align: left;
+}
+
+.container img {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-right: 50px;
+}
+
+.container .text-p .start-btn #start {
+  float: right;
+  background-color: rgb(150, 5, 150);
+  padding: 10px 40px 10px 40px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/*index page ends*/
+
+/*contact page starts*/
+
+.contact {
+  display: block;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact .one {
+  float: left;
+  background-color: rgb(150, 5, 150);
+  color: #fff;
+  margin-right: 20px;
+  border: solid rgb(150, 5, 150);
+  border-radius: 50%;
+}
+
+.contact .subhead {
+  display: inline-block;
+}
+
+.container-data {
+  display: block;
+}
+
+.userdata label {
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+  margin-right: 80px;
+}
+
+.userdata input {
+  height: 40px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 0.1px solid rgb(150, 5, 150);
+}
+
+.container .text-p .start-btn #continue {
+  float: right;
+  background-color: rgb(150, 5, 150);
+  padding: 10px 40px 10px 40px;
+  text-transform: capitalize;
+  border: 1px solid rgb(150, 5, 150);
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.container .text-p .start-btn #cancel {
+  float: left;
+  background-color: #fff;
+  padding: 10px 40px 10px 40px;
+  text-transform: capitalize;
+  border: 1px solid rgb(150, 5, 150);
+  border-radius: 5px;
+  color: #333;
+  margin-top: 50px;
+}
+
+/*Contact styles end*/
+
+/*Work background starts*/
+
+.userdata select {
+  font-size: medium;
+  height: 40px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 0.1px solid rgb(150, 5, 150);
+}
+
+.radio-btn {
+  display: block;
+}
+
+.radio-btn .exp-label {
+  float: left;
+  width: 140px;
+  margin-right: 80px;
+}
+
+input[type="radio"] {
+  margin-top: -1;
+  vertical-align: baseline;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*Work background ends*/
+
+/*feedback starts*/
+.container .text-p .start-btn #submit {
+  float: right;
+  background-color: rgb(150, 5, 150);
+  padding: 10px 40px 10px 40px;
+  text-transform: capitalize;
+  border: 1px solid rgb(150, 5, 150);
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.userdata .feedback-label {
+  float: left;
+}
+
+textarea {
+  border: 0.1px solid rgb(150, 5, 150);
+}

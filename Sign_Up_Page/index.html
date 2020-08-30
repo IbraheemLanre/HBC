@@ -4,110 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign UP Page</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <style>
-    body {
-      height: 100vh;
-      background-color: #236747;
-      font-family: "Raleway", sans-serif;
-    }
-
-    .container-box {
-      padding: 20px;
-    }
-
-    .container {
-      background-color: white;
-      display: block;
-      height: 85vh;
-      width: 310px;
-      margin: 0 auto;
-      padding: 10px 10px 10px 10px;
-      border-radius: 5px;
-    }
-
-    h1,
-    p,
-    h4 {
-      text-align: center;
-    }
-
-    .existing-user {
-      color: white;
-    }
-
-    input {
-      height: 40px;
-      margin-bottom: 20px;
-      margin-top: 5px;
-      width: 300px;
-    }
-
-    #submit {
-      color: white;
-      width: 250px;
-      display: block;
-      margin: 0 auto;
-      background-color: tomato;
-      text-decoration: none;
-      border-radius: 5px;
-      border: none;
-    }
-
-    #submit:hover {
-      cursor: pointer;
-      background-color: #236747;
-    }
-
-    span {
-      color: tomato;
-    }
-  </style>
   <body>
-    <div class="container-box">
+    <main>
       <div class="container">
+        <h1>Sign Up</h1>
+          <p>It's free and only takes a minute</p>
         <form action="">
-          <h1>Sign Up</h1>
-          <h4>It's free and only takes a few minutes</h4>
-          <label for="firstname">First name</label>
-          <div>
+          <div class="input-text">
+            <label for="firstname">First name</label>
             <input type="text" id="firstname" />
           </div>
-          <label for=""></label>
-
-          <label for="lastname">Last name</label>
-          <div>
+          <div class="input-text">
+            <label for="lastname">Last name</label>
             <input type="text" name="" id="lastname" />
           </div>
-
-          <label for="email">Email</label>
-          <div>
+          <div class="input-text">
+            <label for="email">Email</label>
             <input type="email" name="" id="email" />
           </div>
-
-          <label for="password">Password</label>
-          <div>
+          <div class="input-text">
+            <label for="password">Password</label>
             <input type="password" name="" id="password" />
           </div>
-
-          <label for="confirm-password">Confirm Password</label>
-          <div>
+          <div class="input-text">
+            <label for="confirm-password">Confirm Password</label>
             <input type="password" name="" id="confirm-password" />
           </div>
-
-          <div>
-            <input type="button" name="" id="submit" value="SIGN UP" />
-          </div>
+          <button class="mb20 type="submit">Sign up</button>
         </form>
-        <p>
+        <p class="existing-user">
           By clicking the Sign Up button you agree to our
-          <span>Terms & Condition </span>and<span> Privacy Policy</span>
+          <a href="#">Terms & Condition</a> and
+          <a href="#"> Privacy Policy</a>
         </p>
       </div>
-      <div class="existing-user">
-        <p>Already have an account? <span>Login Here</span></p>
-      </div>
-    </div>
+    </main>
+    <footer>
+      <p>Already have an account? <a href="#">Login Here</a></p>
+    </footer>
   </body>
 </html>

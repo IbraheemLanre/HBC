@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Ovo", serif;
+}
+
+/*Header starts*/
+header {
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  display: block;
+}
+
+header #logo a img {
+  width: 200px;
+  height: 80px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+/*Header ends*/
+
+/*Hero Banner starts here*/
+.container-hero {
+  background-image: url("img/pexels-visionpic-net-1003864.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 300px 200px 50px 200px;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-text {
+  background-color: rgba(255, 72, 0, 0.411);
+  color: #fff;
+  width: 400px;
+  height: 300px;
+  padding: 20px 20px 20px 20px;
+}
+
+.hero-text h1,
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+#read {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: darkblue;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  border: none;
+}
+
+/*Hero Banner ends here*/
+
+/*About starts here*/
+
+.container-about {
+  background-color: #fff;
+  padding: 100px 200px 100px 200px;
+  height: 100vh;
+  width: 100%;
+}
+
+.about-text {
+  float: left;
+  width: 45%;
+  padding: 50px 0 50px 0;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+}
+
+.container-about img {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+/*About ends here*/
+
+/*footer starts here*/
+.container-contact {
+  background-color: #333;
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  padding: 50px 200px 20px 200px;
+}
+
+.footer-para {
+  display: inline-block;
+  width: 40%;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+
+.form-group {
+  float: left;
+  width: 45%;
+  margin-bottom: 40px;
+}
+
+.user-data label {
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-top: -1;
+  vertical-align: baseline;
+  padding: 10px;
+  margin: 10px;
+}
+
+.copywrite {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+#send {
+  background-color: tomato;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  text-transform: uppercase;
+}
