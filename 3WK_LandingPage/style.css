@@ -37,8 +37,14 @@ header nav ul li a {
   color: #333;
   margin-right: 30px;
   text-transform: uppercase;
+  border-bottom: 4px solid transparent;
 }
 
+header nav ul li a:hover {
+  color: coral;
+  font-weight: bold;
+  border-bottom: 4px solid coral;
+}
 /*Header ends*/
 
 /*Hero Banner starts here*/
@@ -72,6 +78,7 @@ header nav ul li a {
   color: #fff;
   padding: 10px 10px 10px 10px;
   border: none;
+  cursor: pointer;
 }
 
 /*Hero Banner ends here*/
