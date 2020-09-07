@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: brown;
+  font-family: "Ovo" serif;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  background-color: #333;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+a:visited {
+  color: orange;
+}
+
+/* main */
+
+main {
+  margin-top: 60px;
+}
+
+.text-content p {
+  padding: 1rem;
+  color: grey;
+  background-color: lightcyan;
+  margin: 1rem;
+}
+
+/* .text-content p:first-child {
+  color: #000;
+  background-color: pink;
+}
+
+.text-content p:last-child {
+  color: green;
+  background-color: pink;
+} */
+
+.text-content p:nth-child(2) {
+  color: green;
+  background-color: pink;
+  position: relative;
+  top: 75px;
+  left: 75px;
+}
+
+.text-content {
+  position: relative;
+}
+
+.text-content p:nth-child(3) {
+  color: green;
+  background-color: pink;
+  position: absolute;
+  bottom: 0;
+}
+
+.text-content p:nth-child(4) {
+  color: green;
+  background-color: mediumaquamarine;
+  position: sticky;
+  top: 200px;
+}
+
+/* hero banner code */
+section {
+  position: relative;
+  height: 90vh;
+  background: url("https://picsum.photos/200/300?random=1") no-repeat fixed
+    center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+section::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(223, 236, 232, 0.349);
+  top: 0;
+  left: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+}
