@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+  font-family: "Ovo", serif;
+}
+
+h1 {
+  color: blue;
+}
+
+/*Media queries*/
+
+/*Small devices (landscape phones, 576px and up to the next breakpoint)*/
+@media (min-width: 576px) {
+  body {
+    background-color: rgb(151, 151, 207);
+  }
+  h1 {
+    color: #fff;
+  }
+
+  h1::after {
+    content: "mobiles 576px - 767px";
+  }
+}
+
+/* Small devices (tablets, 768px and up to next breakpoint)*/
+@media (min-width: 768px) {
+  body {
+    background-color: goldenrod;
+  }
+
+  h1 {
+    color: black;
+  }
+
+  h1::after {
+    content: "Tablet devices 768px - 991px";
+  }
+}
+
+/*Large Devices (desktops, 992px and up to the next breakpoint)*/
+@media (min-width: 992px) {
+  body {
+    background-color: skyblue;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  h1::after {
+    content: "Large Devices 992px - 1199px";
+  }
+}
+
+/*Extra-large Devices (large desktops, 1200px and up to the next breakpoint)*/
+@media (min-width: 1200px) {
+  body {
+    background-color: red;
+  }
+
+  h1 {
+    color: yellow;
+  }
+
+  h1::after {
+    content: "Extra-large Devices 1200px and up";
+  }
+}

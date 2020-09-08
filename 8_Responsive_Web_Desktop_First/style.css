@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+  font-family: "Ovo", serif;
+}
+
+h1 {
+  color: blue;
+}
+
+h1::after {
+  content: "Default - desktop";
+}
+
+/*Media queries*/
+
+/*Large devices (large desktops up to 1200px)*/
+@media (max-width: 1200px) {
+  body {
+    background-color: rgb(120, 120, 207);
+  }
+  h1 {
+    color: #fff;
+  }
+
+  h1::after {
+    content: "Extra large screen up to 1200px";
+  }
+}
+
+/* large devices (desktops, up to 992px)*/
+@media (max-width: 992px) {
+  body {
+    background-color: rgb(104, 179, 43);
+  }
+
+  h1 {
+    color: black;
+  }
+
+  h1::after {
+    content: "large devices up to 992px";
+  }
+}
+
+/*Small Devices (tablets up to 768px)*/
+@media (max-width: 768px) {
+  body {
+    background-color: skyblue;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  h1::after {
+    content: "Tablets up to 768px";
+  }
+}
+
+/*Small Devices (landscape phones up to 576px)*/
+@media (max-width: 576px) {
+  body {
+    background-color: red;
+  }
+
+  h1 {
+    color: yellow;
+  }
+
+  h1::after {
+    content: "mobiles up to 576px";
+  }
+}
