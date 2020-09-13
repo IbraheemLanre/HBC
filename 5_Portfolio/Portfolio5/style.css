@@ -105,16 +105,16 @@ main .hero-banner h1 {
 }
 
 /*Past Area*/
-main #past {
+main #work {
   background-color: whitesmoke;
 }
 
-main #past .cards {
+main #work .cards {
   display: flex;
   justify-content: space-between;
 }
 
-main #past .card {
+main #work .card {
   background-color: #fff;
   width: 32%;
   padding: 1rem;
@@ -122,50 +122,50 @@ main #past .card {
   box-shadow: 0 0 5px #090908;
 }
 
-main #past .card:hover {
+main #work .card:hover {
   box-shadow: 0 0 25px #090908;
 }
 
-main #past .card img {
+main #work .card img {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 3px;
 }
 
-main #past .card a:hover {
+main #work .card a:hover {
   color: #67fec8;
   text-decoration: underline;
 }
 
 /*Present Area*/
-main #present {
+main #experience {
   display: flex;
   background-color: #fff;
 }
 
-main #present img {
+main #experience img {
   width: 50%;
   object-fit: cover;
   object-position: center;
 }
 
-main #present .present-content {
+main #experience .exp-content {
   padding: 3rem;
 }
 
 /*Future Area*/
-
-#future {
+#skills {
   background: url("//picsum.photos/200/300?random=2") no-repeat fixed center
     center/cover;
   padding: 3rem;
 }
 
-#future .container {
+#skills .container {
   background-color: #fff;
+  height: 600px;
 }
 
-#future img {
+#skills img {
   width: 300px;
   float: left;
   margin-right: 2rem;
@@ -219,11 +219,16 @@ footer form button {
   font-size: inherit;
 }
 
+footer form button:hover {
+  color: #678ffe;
+  background-color: #67fec8;
+}
+
 @media (max-width: 899px) {
-  main #present {
+  main #experience {
     display: block;
   }
-  main #present img {
+  main #experience img {
     width: 100%;
   }
   footer form {
@@ -255,28 +260,28 @@ footer form button {
     font-size: 3rem;
     margin: 1rem;
   }
-  main #past .cards {
+  main #work .cards {
     flex-direction: column;
   }
 
-  main #past .card {
+  main #work .card {
     width: 100%;
     margin: 1rem 0;
   }
 
-  #future img {
+  #skills img {
     width: 400px;
     float: none;
     margin-right: 0;
   }
 
-  main #past,
-  #future {
+  main #work,
+  #skills {
     padding: 0;
   }
 
   .container,
-  main #present .present-content {
+  main #experience .exp-content {
     padding: 1rem;
   }
 }
