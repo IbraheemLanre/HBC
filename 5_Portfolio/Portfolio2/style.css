@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: "Ovo", serif;
+}
+
+/* Header Area */
+
+header {
+  background-color: #090908;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  padding: 2rem;
+  top: 0;
+}
+
+header #logo img {
+  width: 100px;
+  height: 70px;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+header nav ul li a {
+  font-size: small;
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  background-color: goldenrod;
+  cursor: pointer;
+}
+
+/*Hero banner Area*/
+.hero-banner {
+  background-image: url("https://picsum.photos/200/300?random=6");
+  background-position: center center/cover;
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  height: 85vh;
+  padding: 100px;
+  position: relative;
+}
+
+.hero-banner::after {
+  background-color: gainsboro;
+}
+
+span {
+  color: goldenrod;
+}
+
+main .hero-banner h1 {
+  text-align: center;
+  padding: 200px;
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+/*Past Area*/
+
+.past-container {
+  background-color: whitesmoke;
+  border: 40px solid lightgray;
+  padding: 20px 20px 20px 20px;
+  color: black;
+  height: 400px;
+  width: 100%;
+  line-height: 2;
+}
+
+.past-container img {
+  float: left;
+  height: 200px;
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+/*Present Area*/
+
+.present-container {
+  background-image: url("https://picsum.photos/200/300?random=5");
+  background-attachment: fixed;
+  background-position: center center;
+  padding: 20px 20px 20px 20px;
+  color: white;
+  height: 400px;
+  width: 100%;
+  line-height: 2;
+}
+
+.present-container img {
+  float: left;
+  height: 350px;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.present-content {
+  background-color: white;
+  color: #333;
+  height: 350px;
+}
+
+/*Future Area*/
+
+.future-container {
+  background-image: url("https://picsum.photos/200/300?random=4");
+  background-attachment: fixed;
+  padding: 5px 20px 10px 20px;
+  color: #333;
+  height: 400px;
+  width: 100%;
+}
+
+.future-content {
+  background-color: white;
+  padding: 10px 20px 0px 20px;
+  margin-bottom: 30px;
+  color: #333;
+  height: 350px;
+  width: 100%;
+  line-height: 2;
+}
+
+.future-container img {
+  float: left;
+  height: 200px;
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+/*Future Area*/
+
+footer {
+  display: block;
+  background-color: #090908;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}

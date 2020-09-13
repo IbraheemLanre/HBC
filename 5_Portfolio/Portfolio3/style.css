@@ -53,7 +53,7 @@ header nav ul li a:hover {
 
 /*Hero banner Area*/
 .hero-banner {
-  background-image: url("https://picsum.photos/200/300?random=2");
+  background-image: url("https://picsum.photos/200/300?random=6");
   background-position: center center/cover;
   background-repeat: no repeat;
   background-attachment: fixed;
@@ -92,6 +92,7 @@ main .hero-banner h1 {
 .past-container img {
   float: left;
   height: 200px;
+  width: 250px;
   margin-right: 20px;
   border-radius: 5px;
 }
@@ -99,7 +100,7 @@ main .hero-banner h1 {
 /*Present Area*/
 
 .present-container {
-  background-image: url("https://picsum.photos/200/300?random=2");
+  background-image: url("https://picsum.photos/200/300?random=5");
   background-attachment: fixed;
   background-position: center center;
   padding: 20px 20px 20px 20px;
@@ -125,7 +126,7 @@ main .hero-banner h1 {
 /*Future Area*/
 
 .future-container {
-  background-image: url("https://picsum.photos/200/300?random=2");
+  background-image: url("https://picsum.photos/200/300?random=4");
   background-attachment: fixed;
   padding: 5px 20px 10px 20px;
   color: #333;
@@ -154,83 +155,49 @@ main .hero-banner h1 {
 /*Future Area*/
 
 footer {
-  display: block;
-  background-color: #fff;
-}
-
-footer h2 {
-  text-align: center;
-}
-
-footer .copy {
   background-color: #090908;
   color: whitesmoke;
   text-align: center;
-  height: 40px;
-  padding: 10px 0 10px;
+  padding: 20px;
 }
 
-footer .contact-container {
-  background-color: #090908;
-  color: #fff;
-  padding: 20px 20px 20px 20px;
-  height: 350px;
+/* Form */
+footer form {
+  margin: 0 auto;
+  width: 60%;
+  text-align: left;
 }
 
-footer .contact-container form {
-  float: left;
+footer form .form-input {
+  margin: 32px 0;
 }
 
-footer .contact-container label {
-  float: left;
-  vertical-align: middle;
-  width: 140px;
-  margin-right: 80px;
-}
-
-footer .contact-container input {
-  height: 30px;
-  width: 250px;
-  margin-bottom: 10px;
-  font-family: "Ovo" serif;
-}
-
-textarea {
-  margin: 0px 0px 30px 240px;
-  font-family: "Ovo" serif;
-}
-
-button {
-  border: none;
-  border-radius: 5px;
-  margin-left: -60px;
-  background-color: #67fec8;
-  color: #090908;
-  font-family: "Ovo" serif;
-  padding: 10px 10px 10px 10px;
-}
-
-button:hover {
-  background-color: goldenrod;
-  cursor: pointer;
-}
-
-footer .contact-container .contact-icons {
+footer form .form-input label {
+  width: 200px;
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin-left: 100px;
+  text-align: left;
 }
 
-footer .contact-container .contact-icons img {
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  vertical-align: middle;
+footer form .form-input input,
+footer form .form-input textarea {
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  font-size: 16px;
 }
 
-footer .contact-container .contact-icons img:hover {
-  background-color: goldenrod;
-  cursor: pointer;
+footer form button {
+  background-color: rgb(207, 66, 14);
+  border-radius: 5px;
+  border: none;
+  padding: 16px 32px;
+  color: #fff;
+  margin-left: 205px;
+  font-size: inherit;
+}
+
+footer p {
+  margin-top: 50px;
+  font-size: 12px;
 }
