@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Webpage in semantic HTML and CSS"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ovo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon-16x16.png" type="image/x-icon" />
+    <title>Gallery</title>
+    <script
+      src="https://kit.fontawesome.com/9c652ff92e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="#home"><img src="img/DarkLogo.png" alt="logo" /></a>
+      </div>
+
+      <nav>
+        <div class="dropdown">
+          <a class="btn-drop">Portfolio</a>
+          <div class="btn-content">
+            <a href="index.html">Home</a>
+          </div>
+        </div>
+        <a href="#contact-me"
+          ><i class="fas fa-envelope fa-spin"></i>Contact Me</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section id="gallery">
+        <div class="container">
+          <h3>Gallery</h3>
+          <div class="gallery-content">
+            <div class="flex-content">
+              <div class="flex-one">
+                <div class="img-one">
+                  <img
+                    src="//picsum.photos/200/300?random=10"
+                    alt=""
+                    class="box1 pm"
+                  />
+                </div>
+                <div class="img-two">
+                  <img
+                    src="//picsum.photos/200/300?random=11"
+                    alt=""
+                    class="box2 pm"
+                  />
+                  <img
+                    src="//picsum.photos/200/300?random=12"
+                    alt=""
+                    class="box3 pm"
+                  />
+                </div>
+              </div>
+              <div class="flex-two">
+                <div class="container-one">
+                  <img
+                    src="//picsum.photos/200/300?random=13"
+                    alt=""
+                    class="box4 pm"
+                  />
+                  <img
+                    src="//picsum.photos/200/300?random=14"
+                    alt=""
+                    class="box5 pm"
+                  />
+                  <img
+                    src="//picsum.photos/200/300?random=15"
+                    alt=""
+                    class="box6 pm"
+                  />
+                </div>
+                <div class="container-two">
+                  <img
+                    src="//picsum.photos/200/300?random=16"
+                    alt=""
+                    class="box7 pm"
+                  />
+                </div>
+              </div>
+            </div>
+            <aside>
+              <div class="aside-img">
+                <img
+                  src="//picsum.photos/200/300?random=17"
+                  alt=""
+                  class="box8 pm"
+                />
+              </div>
+              <div class="aside-img">
+                <img
+                  src="//picsum.photos/200/300?random=18"
+                  alt=""
+                  class="box9 pm"
+                />
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <h2>Contact Me</h2>
+      <form action="">
+        <div class="form-input">
+          <label for="firstname">First name</label>
+          <input type="text" name="firstname" id="firstname" />
+        </div>
+        <div class="form-input">
+          <label for="lastname">Last name</label>
+          <input type="text" name="lastname" id="lastname" />
+        </div>
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-input">
+          <label for="message">Message me</label>
+          <textarea name="message" id="message" cols="15" rows="5"></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+      <p>Copywrite &copy; Ibraheem Ola-Adua 2020</p>
+    </footer>
+  </body>
+</html>
