@@ -1,0 +1,295 @@
+:root {
+  --light-color: #fff;
+  --dark-color: rgb(29, 24, 24);
+  --primary-color: #002ea1;
+  --secondary-color: #000c80;
+  --background: #fff;
+  --font-regular: "Finlandica", sans-serif;
+  --font-bold: "FinlandicaBold", sans-serif;
+}
+
+@font-face {
+  font-family: "Finlandica";
+  src: url("assets/fonts/finlandica-regularWeb.woff2") format("woff2"),
+    url("assets/fonts/finlandica-regularWeb.woff") format("woff"),
+    url("assets/fonts/finlandica-regularWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FinlandicaBold";
+  src: url("assets/fonts/finlandica-boldWeb.woff2") format("woff2"),
+    url("assets/fonts/finlandica-boldWeb.woff") format("woff"),
+    url("assets/fonts/finlandica-boldWeb.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+span {
+  font-family: var(--font-bold);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+/* header */
+header {
+  background: var(--light-color);
+  height: 175px;
+}
+
+header .first-section {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+#logo {
+  width: 200px;
+}
+
+#logo a {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+.top-menu nav {
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-color);
+  padding: 1rem 3rem 1rem 3rem;
+  margin-top: 1.5rem;
+}
+
+.top-menu nav ul {
+  display: flex;
+  color: var(--light-color);
+  list-style: none;
+  background: var(--primary-color);
+}
+
+.top-menu nav ul li {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.top-menu nav a {
+  border-bottom: 3px solid transparent;
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+
+.top-menu nav a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.top-menu nav a:active {
+  border-bottom: 3px solid #fff;
+}
+
+.top-menu .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.top-menu .btn-drop {
+  padding: 16px;
+  font-size: 16px;
+}
+
+.top-menu .btn-content {
+  display: none;
+  position: absolute;
+  background-color: var(--light-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.top-menu .btn-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.top-menu .btn-content a:hover {
+  background-color: whitesmoke;
+}
+
+.top-menu .dropdown:hover .btn-content {
+  display: block;
+}
+
+.top-menu .dropdown:hover {
+  border-bottom: 5px solid white;
+}
+
+/* hero-banner */
+#hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(9, 67, 226, 0.5), rgba(9, 67, 226, 0.5)),
+    url("assets/img/categories/work-in-finland.jpg") no-repeat center
+      center/cover;
+  min-height: 85vh;
+  margin-top: 0;
+  color: var(--light-color);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 100px;
+  text-align: center;
+  /* font-weight: var(--font-regular); */
+}
+
+.hero-content p {
+  text-align: justify;
+}
+
+/* Category & Region*/
+.content {
+  color: var(--primary-color);
+  padding: 2.5rem 3rem 2.5rem 3rem;
+}
+
+.content h2 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+.content p {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+  margin-top: 1rem;
+}
+
+.gen {
+  min-width: 250px;
+  min-height: 600px;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem;
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+
+.cat-grid img {
+  width: 100%;
+  height: 200px;
+  transition: opacity 250ms linear;
+}
+
+.cat-grid img:hover {
+  background-color: var(--dark-color);
+  opacity: 0.8;
+}
+
+.text-position {
+  position: absolute;
+  top: 70%;
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.text-position:hover {
+  text-decoration: underline;
+}
+
+.item {
+  position: relative;
+}
+
+.other {
+  position: relative;
+  background: var(--primary-color);
+}
+
+.project_mgt-text {
+  position: absolute;
+  top: 55%;
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* region */
+input {
+  border: none;
+  background: var(--primary-color);
+  color: var(--light-color);
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+/* footer */
+footer {
+  background: var(--primary-color);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  color: var(--light-color);
+  padding: 4rem 3rem 4rem 3rem;
+}
+
+.footer-left {
+  display: grid;
+  grid-column: 1 / span 2;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.footer-middle {
+  display: grid;
+  grid-column: 3 / span 3;
+}
+
+.footer-middle h3 {
+  text-transform: uppercase;
+}
+
+.footer-middle .first,
+.second,
+.third {
+  margin: 1rem 0 1rem 0;
+  line-height: 1.5;
+}
+
+.footer-right {
+  display: grid;
+  grid-column: 9 / span 2;
+}
+
+.goto-topBtn {
+  display: grid;
+  justify-content: center;
+  align-content: end;
+  grid-column: 12;
+}
+
+button {
+  height: 70px;
+}
