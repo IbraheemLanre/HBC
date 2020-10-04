@@ -51,8 +51,22 @@
             <li><a href="#">about</a></li>
             <li><a href="#">for employers</a></li>
           </ul>
-          <a href="#" class="search"><i class="fas fa-search"></i></a>
+          <div class="search">
+           <div class="btn">
+            <span class="material-icons">search</span>
+           </div> 
+            <div class="search-form hide">
+              <form action="">
+                <input type="text" name="" id="text-search" placeholder="search">
+                <button class="btn btn-primary" type="submit">
+                  <span class="material-icons">search</span>
+                </button>
+              </form>
+            </div>
+          </div>
+      
         </nav>
+        
       </div>
     </header>
     <main>
@@ -141,7 +155,7 @@
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, nemo.
           </p>
-          <input type="button" value="See region on map" />
+          <input type="button" value="See region on map" id="input-region"/>
           <div class="cat-grid gen">
             <a href="#" class="item"
               ><img src="assets/img/finland/finland1.jpg" alt="" />

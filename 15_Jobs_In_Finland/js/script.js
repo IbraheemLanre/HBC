@@ -1,5 +1,7 @@
 const gotoTopBtn = document.querySelector(".goto-topBtn");
 const width = window.matchMedia("(max-width: 576px)");
+const searchForm = document.querySelector(".search-form");
+const searchBtn = document.querySelector(".btn");
 
 window.addEventListener("scroll", () => {
   if (
@@ -15,4 +17,9 @@ window.addEventListener("scroll", () => {
 gotoTopBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+});
+
+// SHOW & HIDE SEARCH FORM
+searchBtn.addEventListener("click", () => {
+  searchForm.classList.toggle("hide");
 });
