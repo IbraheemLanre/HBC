@@ -28,6 +28,11 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-regular);
   -webkit-font-smoothing: antialiased;
@@ -194,6 +199,7 @@ header .first-section {
 .hero-content h1 {
   font-size: 6.3rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .hero-content p {
@@ -317,18 +323,23 @@ footer {
 }
 
 .goto-topBtn {
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
-}
-
-.goto-topBtn button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-color);
   height: 60px;
   width: 60px;
+  position: fixed;
+  opacity: 0.7;
+  bottom: 2rem;
+  right: 2rem;
 }
 
-.goto-topBtn button span {
-  font-size: 1rem;
+/* .goto-topBtn button {
+} */
+
+.goto-topBtn span {
+  font-size: 1.2rem;
   color: var(--primary-color);
 }
 
