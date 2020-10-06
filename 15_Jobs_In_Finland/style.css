@@ -101,6 +101,11 @@ header .first-section {
   -webkit-transform: rotate(-45deg);
 }
 
+/* main nav */
+.icon {
+  display: none;
+}
+
 .top-menu nav {
   display: flex;
   justify-content: space-between;
@@ -110,6 +115,7 @@ header .first-section {
   color: var(--light-color);
   /* margin-top: 1.5rem; */
 }
+
 /* 
 .top-menu nav ul {
   display: flex;
