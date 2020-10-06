@@ -2,6 +2,9 @@ const gotoTopBtn = document.querySelector(".goto-topBtn");
 const width = window.matchMedia("(max-width: 576px)");
 const searchForm = document.querySelector(".search-form");
 const searchBtn = document.querySelector(".btn");
+const hamburgerMenu = document.querySelector("#menu");
+const opneM = document.querySelector("#openMenu");
+const closeM = document.querySelector("#closeMenu");
 
 window.addEventListener("scroll", () => {
   if (
@@ -22,4 +25,16 @@ gotoTopBtn.addEventListener("click", () => {
 // SHOW & HIDE SEARCH FORM
 searchBtn.addEventListener("click", () => {
   searchForm.classList.toggle("hide");
+});
+
+//
+opneM.addEventListener("click", () => {
+  closeM.classList.toggle("hide");
+  hamburgerMenu.style.display = "block";
+  //   hamburgerMenu.hidden;
+});
+
+closeM.addEventListener("click", () => {
+  closeM.classList.toggle("hide");
+  hamburgerMenu.style.display = "none";
 });
