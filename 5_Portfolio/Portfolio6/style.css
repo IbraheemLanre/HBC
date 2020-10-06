@@ -244,15 +244,6 @@ progress[value]::-webkit-progress-value {
   background-color: #fff;
 }
 
-.pm {
-  transition: all 2s;
-}
-
-.pm:hover {
-  background-color: aqua;
-  min-height: 100px;
-}
-
 #gallery .gallery-content {
   display: flex;
   flex: 3;
@@ -359,6 +350,13 @@ progress[value]::-webkit-progress-value {
   width: 100%;
   height: 100%;
   background-color: orchid;
+}
+
+.pm {
+  transition: opacity 250ms linear;
+}
+.pm:hover {
+  opacity: 0.4;
 }
 
 /* #gallery img {
