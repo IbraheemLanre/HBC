@@ -5,6 +5,9 @@ const searchBtn = document.querySelector(".btn");
 const hamburgerMenu = document.querySelector("#menu");
 const opneM = document.querySelector("#openMenu");
 const closeM = document.querySelector("#closeMenu");
+const navBar = document.querySelector(".top-menu");
+const sticky = navBar.offsetTop;
+const mainDiv = document.querySelector("main");
 
 window.addEventListener("scroll", () => {
   if (
@@ -27,7 +30,6 @@ searchBtn.addEventListener("click", () => {
   searchForm.classList.toggle("hide");
 });
 
-//
 opneM.addEventListener("click", () => {
   closeM.classList.toggle("hide");
   hamburgerMenu.style.display = "block";
@@ -38,3 +40,17 @@ closeM.addEventListener("click", () => {
   closeM.classList.toggle("hide");
   hamburgerMenu.style.display = "none";
 });
+
+/**
+ * Sticky Nav Menu
+ */
+
+const stickyMenu = () => {
+  if (window.pageYOffset >= sticky && !width.matches) {
+    navBar.classList.add("sticky");
+  } else {
+    navBar.classList.remove("sticky");
+  }
+};
+
+window.addEventListener("scroll", stickyMenu);

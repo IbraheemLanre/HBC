@@ -188,6 +188,14 @@ header .first-section {
   border-bottom: 5px solid var(--light-color);
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 100px;
+  z-index: 1;
+}
+
 /* search */
 .search {
   position: relative;
@@ -281,7 +289,7 @@ header .first-section {
     url("assets/img/categories/work-in-finland.jpg") no-repeat center
       center/cover;
   min-height: 85vh;
-  margin-top: 0;
+  /* margin-top: 0; */
   color: var(--light-color);
 }
 
