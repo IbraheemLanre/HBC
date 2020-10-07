@@ -4,17 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A mobile hamburger menu lesson" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ovo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Mobile Hamburger Menu</title>
   </head>
   <body>
     <header>
       <div id="logo"><a href="#">Logo</a></div>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <div id="openHam">
+          <span class="material-icons">menu</span>
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <ul>
+              <li><a href="#">Some Link1</a></li>
+              <li><a href="#">Some Link2</a></li>
+              <li><a href="#">Some Link3</a></li>
+              <li><a href="#">Some Link4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
     </header>
+    <main>
+      <section>
+        <div class="one">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+          in!
+        </div>
+      </section>
+      <section>
+        <div class="two">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+          hic!
+        </div>
+      </section>
+      <section>
+        <div class="three">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+          doloremque.
+        </div>
+      </section>
+    </main>
   </body>
 </html>
