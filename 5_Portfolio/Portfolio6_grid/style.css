@@ -331,6 +331,10 @@ progress[value]::-webkit-progress-value {
 
 /*Footer Area*/
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #090908;
   color: #fff;
   padding: 1.5rem;
