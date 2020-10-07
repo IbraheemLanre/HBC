@@ -369,6 +369,7 @@ footer form .form-input textarea {
   border: none;
   width: 60%;
   font-size: 1rem;
+  font-family: inherit;
 }
 
 footer form button {
