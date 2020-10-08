@@ -34,16 +34,10 @@ header {
 #logo {
   font-size: 2rem;
 }
-/* 
-nav #openHam {
+
+#openHamMenu {
   display: none;
-} */
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: whitesmoke;
-} */
+}
 
 nav ul {
   position: relative;
@@ -52,7 +46,6 @@ nav ul {
 nav ul li {
   list-style: none;
   display: inline-block;
-  /* position: relative; */
   font-size: 1rem;
 }
 
@@ -111,7 +104,7 @@ section {
 /* mobile */
 
 @media (max-width: 572px) {
-  #logo {
+  #openHamMenu {
     display: block;
   }
 
@@ -142,7 +135,7 @@ section {
   }
 
   nav ul li ul {
-    display: block;
+    display: none;
     position: relative;
     top: 0;
     padding-left: 1rem;

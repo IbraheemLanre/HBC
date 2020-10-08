@@ -1,8 +1,8 @@
-const hamMenu = document.querySelector("#openHam");
+const hamMenu = document.querySelector("#openHamMenu");
 
-const openHamMenu = () => {
+const showHamMenu = () => {
   let menu = document.querySelector("ul");
   menu.classList.toggle("mobileMenu");
 };
 
-hamMenu.addEventListener("click", openHamMenu);
+hamMenu.addEventListener("click", showHamMenu);
