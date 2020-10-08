@@ -227,33 +227,33 @@ main #skills .skill-card {
   width: 25%;
   margin-right: 1rem;
   border-radius: 2px;
-  border: 0.1px solid lightgrey;
+  border: 2px solid var(--highlight-color);
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 main #skills .skill-card:nth-child(odd) {
-  background-color: #678ffe;
+  background-color: var(--mix-color);
 }
 
 main #skills .skill-card:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--light-color);
 }
 
 main #skills .skill-card progress[value] {
   -webkit-appearance: none;
   appearance: none;
-  background-color: goldenrod;
+  background-color: var(--primary-color);
 }
 progress[value]::-webkit-progress-bar {
-  background-color: #fff;
+  background-color: var(--light-color);
   border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 1px 2px var(--dark-color) inset;
 }
 
 progress[value]::-webkit-progress-value {
-  background-color: goldenrod;
+  background-color: var(--primary-color);
   border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 1px 2px var(--dark-color) inset;
 }
 
 #skills .skill-cards .skill-card img {
@@ -264,7 +264,7 @@ progress[value]::-webkit-progress-value {
 
 /* Gallery codes */
 #gallery {
-  background-color: #fff;
+  background-color: var(--light-color);
 }
 
 .grid-container {
@@ -287,8 +287,8 @@ progress[value]::-webkit-progress-value {
 }
 
 .gridImg:hover {
-  background-color: aqua;
-  opacity: 0.4;
+  background-color: var(--secondary-color);
+  opacity: 0.7;
 }
 
 .grid1 {
@@ -337,8 +337,8 @@ progress[value]::-webkit-progress-value {
 
 /*Footer Area*/
 footer {
-  background-color: #090908;
-  color: #fff;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   padding: 1.5rem;
   text-align: center;
 }
@@ -370,25 +370,25 @@ footer form .form-input textarea {
 }
 
 footer form button {
-  background-color: goldenrod;
+  background-color: var(--primary-color);
   border-bottom-right-radius: 5px;
   border: none;
   padding: 1rem 2rem;
-  color: #fff;
+  color: var(--light-color);
   font-size: inherit;
   width: 200px;
 }
 
 footer form button:hover {
-  color: #678ffe;
-  background-color: #67fec8;
+  color: var(--mix-color);
+  background-color: var(--secondary-color);
 }
 
 footer #goto-top {
   display: none;
   justify-content: center;
   align-items: center;
-  background: goldenrod;
+  background: var(--primary-color);
   height: 60px;
   width: 60px;
   position: fixed;
@@ -399,7 +399,7 @@ footer #goto-top {
 
 footer #goto-top span {
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--light-color);
 }
 
 /* Mobile Version */
@@ -420,7 +420,7 @@ footer #goto-top span {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #090908;
+    background: var(--dark-color);
   }
 
   header nav ul.hide {
@@ -437,8 +437,8 @@ footer #goto-top span {
   }
 
   header nav a:hover {
-    background: goldenrod;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--light-color);
   }
 
   header nav .btn-content {
@@ -452,7 +452,7 @@ footer #goto-top span {
   /* hero banner */
   main .hero-banner h1 {
     text-align: center;
-    color: whitesmoke;
+    color: var(--highlight-color);
     font-size: 2.5rem;
     font-family: "Ubuntu Mono", monospace;
   }
@@ -465,7 +465,7 @@ footer #goto-top span {
   }
 
   main #work .card {
-    background-color: #fff;
+    background-color: var(--light-color);
     width: 100%;
     margin-bottom: 10px;
     padding: 1rem;
@@ -475,7 +475,7 @@ footer #goto-top span {
   /* Experience Area */
   main #experience {
     grid-template-columns: repeat(1, 1fr);
-    background-color: #fff;
+    background-color: var(--light-color);
   }
 
   main #experience img {
@@ -506,14 +506,13 @@ footer #goto-top span {
     height: 30%;
     margin-bottom: 1rem;
     border-radius: 2px;
-    border: 0.1px solid lightgrey;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
   }
 
   main #skills .skill-card progress[value] {
     -webkit-appearance: none;
     appearance: none;
-    background-color: goldenrod;
+    background-color: var(--primary-color);
     width: 150px;
   }
 
@@ -548,7 +547,7 @@ footer #goto-top span {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #090908;
+    background: var(--dark-color);
   }
 
   header nav ul.hide {
@@ -565,8 +564,8 @@ footer #goto-top span {
   }
 
   header nav a:hover {
-    background: goldenrod;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--light-color);
   }
 
   header nav .btn-content {
@@ -580,7 +579,7 @@ footer #goto-top span {
   /* hero banner */
   main .hero-banner h1 {
     text-align: center;
-    color: whitesmoke;
+    color: var(--highlight-color);
     font-size: 2.5rem;
     font-family: "Ubuntu Mono", monospace;
   }
@@ -597,7 +596,7 @@ footer #goto-top span {
   }
 
   main #work .card {
-    background-color: #fff;
+    background-color: var(--light-color);
     width: 100%;
     margin-bottom: 10px;
     padding: 1rem;
@@ -607,7 +606,7 @@ footer #goto-top span {
   /* Experience Area */
   main #experience {
     grid-template-columns: repeat(1, 1fr);
-    background-color: #fff;
+    background-color: var(--light-color);
   }
 
   main #experience img {
@@ -638,14 +637,13 @@ footer #goto-top span {
     height: 30%;
     margin-bottom: 1rem;
     border-radius: 2px;
-    border: 0.1px solid lightgrey;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
   }
 
   main #skills .skill-card progress[value] {
     -webkit-appearance: none;
     appearance: none;
-    background-color: goldenrod;
+    background-color: var(--primary-color);
     width: 150px;
   }
 
@@ -680,7 +678,7 @@ footer #goto-top span {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #090908;
+    background: var(--dark-color);
   }
 
   header nav ul.hide {
@@ -697,8 +695,8 @@ footer #goto-top span {
   }
 
   header nav a:hover {
-    background: goldenrod;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--light-color);
   }
 
   header nav .btn-content {
@@ -716,7 +714,7 @@ footer #goto-top span {
 
   main .hero-banner h1 {
     text-align: center;
-    color: whitesmoke;
+    color: var(--highlight-color);
     font-size: 2.5rem;
     font-family: "Ubuntu Mono", monospace;
   }
@@ -729,7 +727,7 @@ footer #goto-top span {
   }
 
   main #work .card {
-    background-color: #fff;
+    background-color: var(--light-color);
     width: 100%;
     margin-bottom: 10px;
     padding: 1rem;
@@ -739,7 +737,7 @@ footer #goto-top span {
   /* Experience Area */
   main #experience {
     grid-template-columns: repeat(1, 1fr);
-    background-color: #fff;
+    background-color: var(--light-color);
   }
 
   main #experience img {
@@ -770,14 +768,13 @@ footer #goto-top span {
     height: 30%;
     margin-bottom: 1rem;
     border-radius: 2px;
-    border: 0.1px solid lightgrey;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
   }
 
   main #skills .skill-card progress[value] {
     -webkit-appearance: none;
     appearance: none;
-    background-color: goldenrod;
+    background-color: var(--primary-color);
     width: 150px;
   }
 
@@ -812,7 +809,7 @@ footer #goto-top span {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #090908;
+    background: var(--dark-color);
   }
 
   header nav ul.hide {
@@ -829,8 +826,8 @@ footer #goto-top span {
   }
 
   header nav a:hover {
-    background: goldenrod;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--light-color);
   }
 
   header nav .btn-content {
@@ -844,7 +841,7 @@ footer #goto-top span {
   /* hero banner */
   main .hero-banner h1 {
     text-align: center;
-    color: whitesmoke;
+    color: var(--highlight-color);
     font-size: 2.5rem;
     font-family: "Ubuntu Mono", monospace;
   }
@@ -865,7 +862,7 @@ footer #goto-top span {
   }
 
   main #work .card {
-    background-color: #fff;
+    background-color: var(--light-color);
     width: 100%;
     margin-bottom: 10px;
     padding: 1rem;
@@ -875,7 +872,7 @@ footer #goto-top span {
   /* Experience Area */
   main #experience {
     grid-template-columns: repeat(1, 1fr);
-    background-color: #fff;
+    background-color: var(--light-color);
   }
 
   main #experience img {
@@ -910,14 +907,13 @@ footer #goto-top span {
     height: 30%;
     margin-bottom: 1rem;
     border-radius: 2px;
-    border: 0.1px solid lightgrey;
     padding: 1.5rem;
   }
 
   main #skills .skill-card progress[value] {
     -webkit-appearance: none;
     appearance: none;
-    background-color: goldenrod;
+    background-color: var(--primary-color);
     width: 100px;
   }
 
