@@ -601,6 +601,15 @@ footer #goto-top span {
     background-color: var(--primary-color);
     width: 150px;
   }
+  /* Animation */
+
+  #animation {
+    height: 100vh;
+  }
+
+  #animation .ani-container {
+    display: block;
+  }
 
   footer {
     display: flex;
@@ -733,6 +742,14 @@ footer #goto-top span {
     width: 150px;
   }
 
+  #animation {
+    height: 80vh;
+  }
+
+  #animation .ani-container {
+    display: block;
+  }
+
   footer {
     display: flex;
     justify-content: flex-end;
@@ -862,6 +879,14 @@ footer #goto-top span {
     appearance: none;
     background-color: var(--primary-color);
     width: 150px;
+  }
+
+  #animation {
+    height: 80vh;
+  }
+
+  #animation .ani-container {
+    display: block;
   }
 
   footer {
@@ -1014,6 +1039,23 @@ footer #goto-top span {
   footer form .form-input label {
     margin-bottom: 1rem;
     text-align: center;
+  }
+
+  #animation {
+    height: 70vh;
+  }
+
+  #animation .ani-container {
+    display: block;
+  }
+  #animation .grid1 {
+    width: 150px;
+    height: 200px;
+  }
+
+  #animation .grid2 {
+    width: 150px;
+    height: 200px;
   }
 
   /* Form */
