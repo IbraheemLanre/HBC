@@ -356,6 +356,71 @@ progress[value]::-webkit-progress-value {
   grid-row: 6 / span 3;
 }
 
+/*Animation Page*/
+#animation {
+  background-color: var(--light-color);
+  margin-top: 8rem;
+  height: 100vh;
+}
+
+#animation .ani-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+#animation .grid1 {
+  width: 400px;
+  height: 300px;
+  animation-name: grid1Anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#animation .grid1 img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes grid1Anim {
+  0% {
+    top: 0;
+    left: 0;
+    transform: translate(100px, 100px);
+  }
+  25% {
+    top: 0;
+    left: 0;
+    transform: translate(100px);
+  }
+}
+
+#animation .grid2 {
+  width: 400px;
+  height: 300px;
+  animation-name: grid2Anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#animation .grid2 img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes grid2Anim {
+  50% {
+    bottom: 0;
+    right: 0;
+    transform: translate(100px, 100px);
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+    transform: translate(100px);
+  }
+}
+
 /*Footer Area*/
 footer {
   background-color: var(--dark-color);
