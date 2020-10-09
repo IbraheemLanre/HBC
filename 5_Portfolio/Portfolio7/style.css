@@ -265,6 +265,7 @@ progress[value]::-webkit-progress-value {
 /* Gallery codes */
 #gallery {
   background-color: var(--light-color);
+  margin-top: 8rem;
 }
 
 .grid-container {
@@ -296,17 +297,33 @@ progress[value]::-webkit-progress-value {
   grid-column: 1 / span 4;
 }
 
+.grid1:hover {
+  transform: rotate(15deg);
+}
+
 .grid2 {
   grid-column: 5 / span 2;
+}
+
+.grid2:hover {
+  transform: scale(2, 2);
 }
 
 .grid3 {
   grid-column: 5 / span 2;
 }
 
+.grid3:hover {
+  transform: rotate(90deg);
+}
+
 .grid4 {
   grid-column: 7 / span 3;
   grid-row: 1 / span 3;
+}
+
+.grid4:hover {
+  transform: rotate(90deg);
 }
 
 .grid5 {
@@ -328,6 +345,10 @@ progress[value]::-webkit-progress-value {
 .grid9 {
   grid-column: 7 / span 3;
   grid-row: 4 / span 5;
+}
+
+.grid9:hover {
+  transform: rotate(90deg);
 }
 
 .grid10 {
